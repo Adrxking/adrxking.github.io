@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Asignación</title><style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Tuplas</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -666,31 +666,10 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="5f4c16d1-3bcd-4bc5-b8e9-f2b444df5285" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🛠️</span></div><h1 class="page-title">Asignación</h1></header><div class="page-body"><nav id="16aee267-f34a-4f3c-99ba-e9877af34354" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#3e24f4c3-3e21-4419-9641-6720851f6750">Mayor, Menor, Mayor que, Menor que</a></div></nav><h2 id="3e24f4c3-3e21-4419-9641-6720851f6750" class="">Mayor, Menor, Mayor que, Menor que</h2><pre id="bfff1186-b2ff-4fe2-8a8d-52577f05ca76" class="code"><code>num = 10
-print(num) # Retorna -&gt; 10
-
-num += 5
-print(num) # Retorna -&gt; 15
-
-num -= 5
-print(num) # Retorna -&gt; 10
-
-num *= 2
-print(num) # Retorna -&gt; 20
-
-num /= 2
-print(num) # Retorna -&gt; 10.0
-
-num **= 2
-print(num) # Retorna -&gt; 100.0
-
-&quot;&quot;&quot; OTROS:
-//=	Divide, Redondea a la baja y asigna
-**=	Potencia y asigna
-%=	Modulo y asigna
-|=	OR y asigna
-&amp;=	AND y asigna
-^=	XOR y asigna
-&gt;&gt;=	Right-shift y asigna
-&lt;&lt;=	Left-shift y asigna
-&quot;&quot;&quot;</code></pre></div></article></body></html>
+</style></head><body><article id="6524463c-f995-4739-9582-778e4a74b07c" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🛠️</span></div><h1 class="page-title">Tuplas</h1></header><div class="page-body"><nav id="468834a1-9c0b-4c29-b4af-2e2acd0d30af" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#fa582a2d-d912-4792-b23f-bcb2fb1fb556">Crear una tupla</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#f38994f2-c031-4e05-9540-ae569a92c059">Crear una tupla anidada</a></div></nav><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="57dab3e0-a2fe-4675-8247-aeb9e5528271"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Las tuplas son similares a las listas pero son INMUTABLES</div></figure><h2 id="fa582a2d-d912-4792-b23f-bcb2fb1fb556" class="">Crear una tupla</h2><pre id="bfb3ccba-a5a1-4add-86bb-879e774425d4" class="code"><code>hero1 = (&quot;Batman&quot;, &quot;Bruce Wayne&quot;)
+hero2 = (&quot;Wonder Woman&quot;, &quot;Diana Prince&quot;)
+awesome_team = hero1 + hero2
+print(awesome_team) # Retorna (&#x27;Batman&#x27;, &#x27;Bruce Wayne&#x27;, &#x27;Wonder Woman&#x27;, &#x27;Diana Prince&#x27;)</code></pre><h2 id="f38994f2-c031-4e05-9540-ae569a92c059" class="">Crear una tupla anidada</h2><pre id="1e417c7c-0cda-4554-a295-f502acb2e76b" class="code"><code>hero1 = (&quot;Batman&quot;, &quot;Bruce Wayne&quot;)
+hero2 = (&quot;Wonder Woman&quot;, &quot;Diana Prince&quot;)
+awesome_team = (hero1, hero2)
+print(awesome_team) # Retorna ((&#x27;Batman&#x27;, &#x27;Bruce Wayne&#x27;), (&#x27;Wonder Woman&#x27;, &#x27;Diana Prince&#x27;))</code></pre></div></article></body></html>

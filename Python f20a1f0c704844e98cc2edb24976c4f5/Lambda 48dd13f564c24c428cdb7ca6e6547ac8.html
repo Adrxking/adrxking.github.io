@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Strings</title><style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Lambda</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -666,36 +666,10 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="070233d1-59e0-464c-9479-65bd1a23fbbe" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🛠️</span></div><h1 class="page-title">Strings</h1></header><div class="page-body"><nav id="068c1b99-e500-4429-bc53-9307dac81864" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#3fc3d9fa-79a7-4f29-97a3-eb19e754a6b5">Número de caracteres</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#23da0cd9-7650-404d-96b3-0794c792663e">Acceder al índice de un string</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#140ed696-d60e-4128-8665-ca8d6353a392">Obtener un substring de un string</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#3d088c0a-898a-40af-af19-54cd3573bbf9">Concatenar strings</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#8b33f316-63b0-40eb-a074-a8d6e78e3ef6">Concatenar números</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#e33a0138-9507-4812-8403-28c35d5744fb">Búsqueda de substrings en strings</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#d5e057e7-5caa-41fe-bb47-8839014dc4eb">Búsqueda de substrings en strings con retorno de index</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#99589e7c-43e3-49ab-a5b7-4dff82e35fb1">Reemplazar cadenas por otras cadenas</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#8441f700-01ac-4d5c-a0fb-3142a6c2ff56">Cambiar mayúsculas y minúsculas</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#b8ea7caa-5b23-4153-a36c-60c48b313059">Juntar strings</a></div></nav><h2 id="3fc3d9fa-79a7-4f29-97a3-eb19e754a6b5" class="">Número de caracteres</h2><pre id="126e9e77-2581-4996-9708-aaa0745634ba" class="code"><code>random_string = &quot;hola&quot;
-print(len(random_string)) # Retorna -&gt; 4</code></pre><h2 id="23da0cd9-7650-404d-96b3-0794c792663e" class="">Acceder al índice de un string</h2><pre id="9291a577-48dd-47ee-aee2-7b40a8327c23" class="code"><code>string = &quot;hola&quot;
-print(string[0]) # Retorna -&gt; h
+</style></head><body><article id="48dd13f5-64c2-4c42-8cdb-7ca6e6547ac8" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🛠️</span></div><h1 class="page-title">Lambda</h1></header><div class="page-body"><nav id="de6173ab-d44a-42dc-8923-b6c7e66f0342" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#44b6ebf8-55a7-498c-93ed-01800601562f">Asignar función lambda a una variable</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#5ae2147f-8eb0-4b42-b271-93478836fdf9">Funciones como argumentos</a></div></nav><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="f03bc332-0343-4a9e-94f4-9cd3b817c481"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Lambda son las funciones anónimas, retornan un valor y se deben de asignar a una variable, son ampliamente usadas cuando una función necesita de otra función en su argumento</div></figure><h2 id="44b6ebf8-55a7-498c-93ed-01800601562f" class="">Asignar función lambda a una variable</h2><pre id="0bfdb1e4-73a2-43ca-87af-8cb33e445bc3" class="code"><code>my_func = lambda num: &quot;High&quot; if num &gt; 50 else &quot;Low&quot;
 
-# Acceder al últimos caracter de 2 formas diferentes:
-last = batman[len(batman) - 1]
-last = batman[-1]</code></pre><h2 id="140ed696-d60e-4128-8665-ca8d6353a392" class="">Obtener un substring de un string</h2><pre id="f5a7ac3b-5c77-4e3b-8831-00caca5927f1" class="code"><code>my_string = &quot;This is MY string!&quot;
-print(my_string[0:4]) # Retorna -&gt; This
-print(my_string[0:len(my_string)]) # Retorna -&gt; This is MY string!
-print(my_string[0:7:2])  # Retorna -&gt; Tis
-print(my_string[7:0:-2]) # Retorna -&gt; ish
-print(my_string[:4]) -&gt; # Retorna -&gt; This
-print(my_string[7:]) -&gt; # Retorna -&gt; MY string!
-print(my_string[:]) -&gt; # Retorna -&gt; This is MY string!
-print(my_string[::-1]) -&gt; # Retorna -&gt; !gnirts YM si sihT</code></pre><h2 id="3d088c0a-898a-40af-af19-54cd3573bbf9" class="">Concatenar strings</h2><pre id="506e7a21-45bd-4da8-b34f-51a5a9f866a9" class="code"><code>string1 = &quot;I like %s&quot; % &quot;Python&quot; # Retorna -&gt; I like Python
+print(my_func(60)) # Retorna &#x27;High&#x27;</code></pre><h2 id="5ae2147f-8eb0-4b42-b271-93478836fdf9" class="">Funciones como argumentos</h2><pre id="d1502ef4-6ba7-45f8-bd23-b334f4a34b91" class="code"><code>def calculadora(operacion, n1, n2):
+    return operacion(n1, n2)
 
-temp = &quot;Educative&quot;
-string2 = &quot;I like %s&quot; % temp # Retorna -&gt; I like Educative
-
-string3 = &quot;I like %s and %s&quot; % (&quot;Python&quot;, temp) # Retorna -&gt; I like Python and Educative</code></pre><h2 id="8b33f316-63b0-40eb-a074-a8d6e78e3ef6" class="">Concatenar números</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="e5791ea5-5e68-4799-9ce7-08ca7fe6aaf2"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Por defecto al agregar flotantes con %f estos se formatean a 6 decimales</div></figure><pre id="949d440d-7cb7-4944-a7c2-3ff09bf3ae0e" class="code"><code>my_string = &quot;%i + %i = %i&quot; % (1,2,3) # Retorna -&gt; 1 + 2 = 3
-
-string1 = &quot;%f&quot; % (1.11) # Retorna -&gt; 1.110000
-
-string3 = &quot;%.2f&quot; % (1.117) # Retorna -&gt; 1.12</code></pre><h2 id="e33a0138-9507-4812-8403-28c35d5744fb" class="">Búsqueda de substrings en strings</h2><pre id="cc255449-2adc-48bb-bc92-4bafaca438a3" class="code"><code>random_string = &quot;This is a random string&quot;
-
-print(&#x27;of&#x27; in random_string)  # Retorna -&gt; False
-print(&#x27;random&#x27; in random_string)  # Retorna -&gt; True</code></pre><h2 id="d5e057e7-5caa-41fe-bb47-8839014dc4eb" class="">Búsqueda de substrings en strings con retorno de index</h2><pre id="70496db6-5bd8-45e1-9a3b-5c6bdc7c2647" class="code"><code>random_string = &quot;Mi string&quot;
-print(random_string.find(&quot;st&quot;))  # Retorna 3 ya que es donde comienza el primer st
-print(random_string.find(&quot;st&quot;, 0, 2))  # Retorna -1 ya que no hay ningun st en ese rango</code></pre><h2 id="99589e7c-43e3-49ab-a5b7-4dff82e35fb1" class="">Reemplazar cadenas por otras cadenas</h2><pre id="45e448a0-ffac-4fe9-81ad-d587451dd991" class="code"><code>a_string = &quot;Bienvenido&quot;
-new_string = a_string.replace(&quot;o&quot;, &quot;a&quot;)
-print(new_string) # Retorna &#x27;Bienvenida&#x27;</code></pre><h2 id="8441f700-01ac-4d5c-a0fb-3142a6c2ff56" class="">Cambiar mayúsculas y minúsculas</h2><pre id="a745532c-3e9c-48cb-803a-96c5f32fc907" class="code"><code>print(&quot;UpperCase&quot;.upper()) # Retorna &#x27;UPPERCASE&#x27;
-print(&quot;LowerCase&quot;.lower()) # Retorna &#x27;lowercase&#x27;</code></pre><h2 id="b8ea7caa-5b23-4153-a36c-60c48b313059" class="">Juntar strings</h2><pre id="3d94fa9d-a773-48aa-87f7-8e4f122331e8" class="code"><code>arr = [&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;]
-print(&#x27;&gt;&gt;&#x27;.join(arr)) # Retorna a&gt;&gt;&gt;b&gt;&gt;c</code></pre></div></article></body></html>
+result = calculator(lambda n1, n2: n1 * n2, 10, 20)
+print(result) # Retorna 200</code></pre></div></article></body></html>

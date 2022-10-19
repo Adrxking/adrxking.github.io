@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Aritméticos</title><style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Conversion de estructuras de datos</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -666,19 +666,30 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="015593fe-4c33-48dc-aa14-4ac4b29769a9" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🛠️</span></div><h1 class="page-title">Aritméticos</h1></header><div class="page-body"><nav id="b8b9786d-cbea-4dfb-be75-581dd9aad87f" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#059dfac7-7bb5-427e-8f3e-04c4e8bd8a30">Suma</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#61d9d10d-0704-4a5a-9d90-3bcb6d986c3d">Resta</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#10b980d8-45fc-4053-b06a-3e605f6f2934">Multiplicación</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#ed40ace8-b366-4cc4-85a8-5345b488b518">División</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#7c8f4a02-0c79-4e4e-a897-cef8f5ede824">División entera</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#d9f4e276-5538-4370-bd17-029b19c149a0">Módulo</a></div></nav><h2 id="059dfac7-7bb5-427e-8f3e-04c4e8bd8a30" class="">Suma</h2><pre id="13991a1b-7b85-49b8-855f-23b3bb53ce4e" class="code"><code>float1 = 13.65
-float2 = 3.40
-print(float1 + float2) # Retorna -&gt; 17.05</code></pre><h2 id="61d9d10d-0704-4a5a-9d90-3bcb6d986c3d" class="">Resta</h2><pre id="8f1c430c-049e-4541-968e-8273f5cda36b" class="code"><code>float1 = -18.678
-float2 = 3.55
-print(float1 - float2) # Retorna -&gt; -22.228</code></pre><h2 id="10b980d8-45fc-4053-b06a-3e605f6f2934" class="">Multiplicación</h2><pre id="7e4ee462-28e8-47db-9bde-55faddac3741" class="code"><code>float1 = 5.5
-float2 = 4.5
-print(float1 * float2) # Retorna -&gt; 24.75</code></pre><h2 id="ed40ace8-b366-4cc4-85a8-5345b488b518" class="">División</h2><pre id="4ff23f96-2fdc-4f57-947c-267b7a5089f5" class="code"><code>float1 = 5.5
-float2 = 4.5
-print(float1 / float2) # Retorna -&gt; 1.2222222222222223</code></pre><h2 id="7c8f4a02-0c79-4e4e-a897-cef8f5ede824" class="">División entera</h2><pre id="0e37d123-2809-4cdd-8899-315e1fdf2e3a" class="code"><code>float1 = 5.5
-float2 = 4.5
-print(float1 // float2) # Retorna -&gt; 1.0</code></pre><h2 id="d9f4e276-5538-4370-bd17-029b19c149a0" class="">Módulo</h2><pre id="09f39479-4941-4387-874a-9d6dd3c4a144" class="code"><code>print(28 % 10)
+</style></head><body><article id="ab95b6f9-ed92-4d19-a411-ae8be4a8d6b9" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🛠️</span></div><h1 class="page-title">Conversion de estructuras de datos</h1></header><div class="page-body"><nav id="a3e5f80d-a8f7-4139-8923-22023d093009" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#5ee16581-994d-42c4-93d7-e532450edc33">Convertir a Lista</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#542c2640-c41c-4284-8f3f-52507a856a9d">Convertir a Tupla</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#db0f9358-2005-443a-819c-69896c8c30af">Convertir a Set</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#6231ef57-8642-44bb-94af-edcab8a261ca">Convertir a Diccionario</a></div></nav><h2 id="5ee16581-994d-42c4-93d7-e532450edc33" class="">Convertir a Lista</h2><pre id="ff475b92-58a9-4e89-8559-ebf4027926e9" class="code"><code>star_wars_tup = (&quot;Anakin&quot;, &quot;Darth Vader&quot;, 1000)
+star_wars_set = {&quot;Anakin&quot;, &quot;Darth Vader&quot;, 1000}
+star_wars_dict = {1: &quot;Anakin&quot;, 2: &quot;Darth Vader&quot;, 3: 1000}
 
-print(-28 % 10)  # Resto con mismo signo que el numero de la derecha
-print(28 % -10)  # Resto con mismo signo que el numero de la derecha</code></pre><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="8315f4d2-4b9f-4ae9-bdfc-a587f1cb1b04"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Regla por la que se calculan los módulos con numeros negativos:
-n - math.floor(n/base) * base = mod</div></figure><p id="29ec0f9b-8f22-491c-9acb-6bdaa4416667" class="">
-</p></div></article></body></html>
+star_wars_list = list(star_wars_tup)  # [&#x27;Anakin&#x27;, &#x27;Darth Vader&#x27;, 1000]
+star_wars_list = list(star_wars_set)  # [1000, &#x27;Anakin&#x27;, &#x27;Darth Vader&#x27;]
+star_wars_list = list(star_wars_dict)  # [1, 2, 3]
+star_wars_list = list(star_wars_dict.items()) # [(1, &#x27;Anakin&#x27;), (2, &#x27;Darth Vader&#x27;), (3, 1000)]</code></pre><h2 id="542c2640-c41c-4284-8f3f-52507a856a9d" class="">Convertir a Tupla</h2><pre id="622fda60-5ff0-4c20-82d1-104d767c0076" class="code"><code>star_wars_list = [&quot;Anakin&quot;, &quot;Darth Vader&quot;, 1000]
+star_wars_set = {&quot;Anakin&quot;, &quot;Darth Vader&quot;, 1000}
+star_wars_dict = {1: &quot;Anakin&quot;, 2: &quot;Darth Vader&quot;, 3: 1000}
+
+star_wars_tup = tuple(star_wars_list)  # (&#x27;Anakin&#x27;, &#x27;Darth Vader&#x27;, 1000)
+star_wars_tup = tuple(star_wars_set)  # (1000, &#x27;Darth Vader&#x27;, &#x27;Anakin&#x27;)
+star_wars_tup = tuple(star_wars_dict)  # (1, 2, 3)
+star_wars_tup = tuple(star_wars_dict.items()) # ((1, &#x27;Anakin&#x27;), (2, &#x27;Darth Vader&#x27;), (3, 1000))</code></pre><h2 id="db0f9358-2005-443a-819c-69896c8c30af" class="">Convertir a Set</h2><pre id="0d60c510-7786-4c10-a27e-f0940ffd654c" class="code"><code>star_wars_list = [&quot;Anakin&quot;, &quot;Darth Vader&quot;, 1000]
+star_wars_tup = (&quot;Anakin&quot;, &quot;Darth Vader&quot;, 1000)
+star_wars_dict = {1: &quot;Anakin&quot;, 2: &quot;Darth Vader&quot;, 3: 1000}
+
+star_wars_set = set(star_wars_list)  # {&#x27;Anakin&#x27;, 1000, &#x27;Darth Vader&#x27;}
+star_wars_set = set(star_wars_tup)  # {&#x27;Anakin&#x27;, 1000, &#x27;Darth Vader&#x27;}
+star_wars_set = set(star_wars_dict)  # {1, 2, 3}</code></pre><h2 id="6231ef57-8642-44bb-94af-edcab8a261ca" class="">Convertir a Diccionario</h2><pre id="aabca7c7-ad42-4e2e-9181-fcdaf5bab6b3" class="code"><code>star_wars_list = [[1,&quot;Anakin&quot;], [2,&quot;Darth Vader&quot;], [3, 1000]]
+star_wars_tup = ((1, &quot;Anakin&quot;), (2, &quot;Darth Vader&quot;), (3, 1000))
+star_wars_set = {(1, &quot;Anakin&quot;), (2, &quot;Darth Vader&quot;), (3, 1000)}
+
+star_wars_dict = dict(star_wars_list) # {1: &#x27;Anakin&#x27;, 2: &#x27;Darth Vader&#x27;, 3: 1000}
+star_wars_dict = dict(star_wars_tup) # {1: &#x27;Anakin&#x27;, 2: &#x27;Darth Vader&#x27;, 3: 1000}
+star_wars_dict = dict(star_wars_set) # {1: &#x27;Anakin&#x27;, 2: &#x27;Darth Vader&#x27;, 3: 1000}</code></pre></div></article></body></html>
